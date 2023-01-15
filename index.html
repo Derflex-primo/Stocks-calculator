@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeoStocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./SignatureDeo.js"></script>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="ac b">Stocks Calculator</div>
+      <div id="cover">
+        <form name="tstest">
+          <div id="d1">
+            <table class="main">
+              <tr>
+                <td width="50%">Number of scrips</td>
+                <td>
+                  <input type="number" id="num" onchange="stock();" />
+                  <tr>
+                    <td>Date of purchase</td>
+                    <td>
+                      <input type="date" id="h1" onchange="stock();" />
+                      <tr>
+                        <td>Date of sale</td>
+                        <td>
+                          <input type="date" id="h2" onchange="stock();" />
+                          <tr>
+                            <td>Purchase price per Share</td>
+                            <td>
+                              <input
+                                type="number"
+                                id="purprice"
+                                onchange="stock();"
+                              />
+                              <tr>
+                                <td>Sale price per Share</td>
+                                <td>
+                                  <input
+                                    type="number"
+                                    id="saleprice"
+                                    onchange="stock();"
+                                  />
+                                  <tr>
+                                    <td>Dividend received</td>
+                                    <td>
+                                      <input
+                                        type="number"
+                                        id="div"
+                                        onchange="stock();"
+                                      />
+                                      <tr>
+                                        <td>Brokerage + Tax</td>
+                                        <td>
+                                          <input
+                                            type="number"
+                                            id="stt"
+                                            onchange="stock();"
+                                          />
+                                          <tr>
+                                            <td>
+                                              <button type="reset">
+                                                Reset
+                                              </button>
+                                            </td>
+                                            <td>
+                                              <button
+                                                type="button"
+                                                onclick="stock();"
+                                              >
+                                                Submit
+                                              </button>
+                                              <tr>
+                                                <td>Net Return</td>
+                                                <td>
+                                                  <input class="op" id="nroi" />
+                                                  <tr>
+                                                    <td class="b">
+                                                      Annualised Return
+                                                    </td>
+                                                    <td>
+                                                      <input
+                                                        class="op"
+                                                        id="arr"
+                                                      />
+                                                    </td>
+                                                  </tr>
+                                                </td>
+                                              </tr>
+                                            </td>
+                                          </tr>
+                                        </td>
+                                      </tr>
+                                    </td>
+                                  </tr>
+                                </td>
+                              </tr>
+                            </td>
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
